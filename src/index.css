@@ -8,4 +8,89 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  /* overflow-x: hidden; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-fluid {
+  padding-bottom: 15px;
+}
+
+.navbar {
+  z-index: 50;
+}
+
+.flex {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.flex.fill {
+  height: 100%;
+}
+
+.heading {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.nav-link {
+  font-weight: 600;
+}
+
+.give,
+.a-lot {
+  color: #f2a00f;
+}
+
+.a-lot {
+  text-shadow: #0fa958;
+}
+
+.cta-btn {
+  font-size: 2rem;
+  background-color: #0fa958;
+  border: none;
+  padding: 0.5rem 2rem;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  color: white;
+  background-color: #f2a00f;
+  transition: all 1s ease-in;
+}
+
+/* @media (max-width: 400px) {
+  .heading {
+    font-size: 2rem;
+  }
+  .cta-btn {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+  }
+} */
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./assets/african-orphans.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.banner-wrapper {
+  /* margin-left: 5rem; */
+  padding-top: 2rem;
 }
