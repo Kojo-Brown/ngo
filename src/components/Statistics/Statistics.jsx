@@ -1,45 +1,42 @@
 import React from "react";
-import styled from "styled-components";
-import StatsBgImg from "../../assets/stats-bg-img.jpg";
+import { StatsTitle, StatsWrapper, StatsSubTitle } from "../../styles/Styles"
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
-const StatsWrapper = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url(${StatsBgImg});
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin-top: 5rem;
-  color: white;
-`;
 
 const Statistics = () => {
   return (
     <StatsWrapper>
-      <h1>Statistics</h1>
+      <StatsTitle>How can you help?</StatsTitle>
+      <div className="stats-container">
       <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
         {({ isVisible }) => (
           <div style={{ height: 100 }}>
-            {isVisible ? <CountUp start={0} end={31000000} duration={5} /> : null}
+            {isVisible ? <CountUp start={0} end={8796} duration={5} className="stats-number" /> : null}
+            <StatsSubTitle>Numbers of Volunteers</StatsSubTitle>
+            <p className="stats-description">We are more than ten thousand <span className="diff">volunteers</span> in different countries.</p>
           </div>
         )}
       </VisibilitySensor>
       <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
         {({ isVisible }) => (
           <div style={{ height: 100 }}>
-            {isVisible ? <CountUp start={0} end={1242} duration={5} /> : null}
+            {isVisible ? <CountUp start={0} end={92} duration={5} className="stats-number" /> : null}
+            <StatsSubTitle>Numbers of Projects</StatsSubTitle>
+            <p className="stats-description">Our primary objectives are <span className="diff">philanthropy and social well-being.</span></p>
           </div>
         )}
       </VisibilitySensor>
       <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
         {({ isVisible }) => (
           <div style={{ height: 100 }}>
-            {isVisible ? <CountUp start={0} end={987} duration={5} /> : null}
+            {isVisible ? <CountUp start={0} end={17520} duration={5} className="stats-number" /> : null}
+            <StatsSubTitle>Numbers of Volunteer Hours</StatsSubTitle>
+            <p className="stats-description">Volunteers are a valuable resource to <span className="diff">support</span> the planet.</p>
           </div>
         )}
       </VisibilitySensor>
+      </div>
     </StatsWrapper>
   );
 };

@@ -77,24 +77,33 @@ nav.navbar {
   transition: all 1s ease-in;
 }
 
-/* @media (max-width: 400px) {
-  .heading {
-    font-size: 2rem;
-  }
-  .cta-btn {
-    font-size: 1rem;
-    padding: 0.3rem 1rem;
-  }
-} */
-
-.banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("./assets/african-orphans.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
+.stats-number {
+  color: #f2a00f;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  font-size: 20px;
 }
-.banner-wrapper {
-  /* margin-left: 5rem; */
-  padding-top: 2rem;
+
+.stats-description {
+  color: white;
+}
+
+.stats-container {
+  width: clamp(50%, 700px, 90%);
+  height: min(75%, 40rem);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diff {
+  color: #0fa958;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.in {
+  font-style: italic;
+  color: #0fa958;
+  font-weight: 600;
 }
