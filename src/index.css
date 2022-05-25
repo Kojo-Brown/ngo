@@ -20,6 +20,19 @@ img {
   height: auto;
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+a:focus {
+  color: #f2a00f;
+}
+
 nav.navbar {
   display: flex;
   align-items: center;

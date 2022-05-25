@@ -1,11 +1,11 @@
 import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Events from "./pages/Events/Events";
 import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (

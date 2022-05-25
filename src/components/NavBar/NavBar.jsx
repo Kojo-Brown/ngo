@@ -25,18 +25,12 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              className="me-auto my-2 my-lg-0 nav-link"
+              style={{ maxHeight: "100px", display: "flex", gap: "15px" }}
               navbarScroll
             >
               <Link to="/">Home</Link>
               <Link to="/about">About Us</Link>
-              {/* <Link to="/features" title="Features" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Events</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">Services</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">Sponsors</NavDropdown.Item>
-              </Link> */}
               <Link to="/gallery">Gallery</Link>
               <Link to="/events">Events</Link>
               <Link to="/contact">Contact Us</Link>
