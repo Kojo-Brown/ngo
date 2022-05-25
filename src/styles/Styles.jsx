@@ -216,6 +216,7 @@ export const MiniSectionBtns = styled.div`
     flex-direction: column;
   }
 `;
+
 // Footer
 export const FooterContainer = styled.div`
   background-color: black;
