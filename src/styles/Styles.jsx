@@ -98,15 +98,26 @@ export const StatsWrapper = styled.div`
   background-repeat: no-repeat;
   height: 100vh;
   margin-top: 5rem;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   color: green;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
+
+export const StatsContainer = styled.div`
+  /* background-color: gray; */
+  /* height: min(50%, 300px); */
+`
 
 export const StatsTitle = styled(SecondaryHeader)`
   padding: 1rem 0rem;
   text-transform: uppercase;
   color: white;
 `;
+
 export const StatsSubTitle = styled.h5`
   font-weight: 700;
   color: white;
@@ -264,3 +275,16 @@ export const FooterIcons = styled.img`
     transition: all 0.5s ease-in-out;
   }
 `;
+
+export const ContactContent = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+  gap: 3rem;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr;
+  }
+`

@@ -120,3 +120,116 @@ nav.navbar {
   color: #0fa958;
   font-weight: 600;
 }
+
+td:first-child {
+  font-weight: 600;
+}
+
+.left {
+  width: clamp(50%, 700px, 90%);
+  border-radius: 11px;
+  padding: 15px;
+  border: 1px solid;
+}
+
+.right {
+  width: clamp(50%, 700px, 90%);
+  border-radius: 11px;
+  padding: 15px;
+  border: 1px solid;
+}
+
+.about-us-container {
+  margin: 1rem 2rem;
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.swiper-container {
+  margin-top: 2rem;
+}
+
+.slider-wrapper {
+  color: white;
+}
+
+blockquote {
+  width: clamp(30%, 500px, 60%);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.30);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 10px;
+}
+
+blockquote::before,
+blockquote::after {
+  content: "\201C";
+}
+
+.slide-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('./assets/about-child-1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slide-1 p,
+.slide-2 p,
+.slide-3 p,
+.slide-4 p {
+  padding: 10px;
+  font-weight: 600;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.30);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.slide-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('./assets/about-child-2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slide-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('./assets/about-child-3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slide-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('./assets/about-child-4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

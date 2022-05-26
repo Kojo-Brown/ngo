@@ -14,7 +14,7 @@ const Gallery = () => {
     const [items, set] = useState(data)
 
     useEffect(() => {
-        const t = setInterval(() => set(shuffle), 2000)
+        const t = setInterval(() => set(shuffle), 5000)
         return () => clearInterval(t)
       }, [])
 
