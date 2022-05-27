@@ -55,7 +55,7 @@ const Statistics = () => {
                 <CountUp
                   start={0}
                   end={17520}
-                  duration={5}
+                  duration={2}
                   className="stats-number"
                 />
               ) : null}
