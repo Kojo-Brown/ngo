@@ -20,7 +20,7 @@ const Blog = () => {
         <Col sm>
           <div style={{ maxWidth: "100%", height: "auto" }}>
             <Ratio aspectRatio={50}>
-              <embed type="image/jpg" src={Image7} />
+              <img type="image/jpg" src={Image7} alt=""/>
             </Ratio>
           </div>
           <BlogWrapper>
