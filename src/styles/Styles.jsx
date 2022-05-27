@@ -276,6 +276,7 @@ export const FooterIcons = styled.img`
   }
 `;
 
+// Contact
 export const ContactContent = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

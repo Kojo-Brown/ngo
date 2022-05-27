@@ -38,8 +38,7 @@ const Blog = () => {
         <Col sm>
           <div style={{ maxWidth: "100%", height: "auto" }}>
             <Ratio aspectRatio={50}>
-              {/* <embed type="video/mp4" src={Vid} autoPlay="off" /> */}
-              <iframe src={Vid} frameborder="0"  allowFullScreen title="video"></iframe>
+              <video src={Vid} frameborder="0"  allowFullScreen title="video" autoPlay="false" controls></video>
             </Ratio>
           </div>
           <BlogWrapper>

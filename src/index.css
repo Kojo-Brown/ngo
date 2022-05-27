@@ -233,3 +233,13 @@ blockquote::after {
   align-items: center;
   flex-wrap: wrap;
 }
+
+.calendar{
+  margin: 5px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
